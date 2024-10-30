@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
-  background-color: #f8f4eb;
+  background-image: url("./img/bg.png");
+  background-repeat: repeat;
 }
 
 /* ASIDE right */
@@ -224,3 +225,94 @@ img {
   border-radius: 20px;
   padding: 5px;
 }
+
+/* Media */
+@media (max-width: 600px) {
+  #main {
+    flex-direction: column; 
+    padding: 2%;
+  }
+
+  #container_left, #container_right {
+    width: 100%;
+  }
+
+  #container_img_profil {
+    width: 90%; 
+  }
+
+  .identify {
+    font-size: 2rem; 
+  }
+
+  #container_name_job,
+  #container_education,
+  #container_experience,
+  #container_soft_skills {
+    width: 90%; 
+    margin-top: 5%; 
+  }
+
+  .title_profil, .title_soft_skills {
+    font-size: 1.5rem; 
+  }
+
+  .container_lvl_skills {
+    flex-direction: column; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #main {
+    padding: 4%;
+  }
+
+  #container_left, #container_right {
+    width: 48%;
+  }
+
+  .identify {
+    font-size: 3rem; 
+  }
+
+  #container_name_job,
+  #container_education,
+  #container_experience,
+  #container_soft_skills {
+    width: 80%; 
+    margin-top: 5%;
+  }
+
+  .title_profil, .title_soft_skills {
+    font-size: 1.8rem; 
+  }
+}
+
+
+@media (min-width: 901px) {
+  #main {
+    padding: 5%;
+  }
+
+  #container_left, #container_right {
+    width: 45%; 
+  }
+
+  .identify {
+    font-size: 4rem; 
+  }
+
+  #container_name_job,
+  #container_education,
+  #container_experience,
+  #container_soft_skills {
+    width: 70%; 
+    margin-top: 7%;
+  }
+
+  .title_profil, .title_soft_skills {
+    font-size: large; 
+  }
+}
+
+
