@@ -4,6 +4,10 @@ body {
   background-repeat: repeat;
 }
 
+.descriptions_text {
+  font-size: 1.5rem;
+}
+
 .one {
   position: absolute;
   width: 100px;
